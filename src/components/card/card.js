@@ -6,7 +6,15 @@ class Card extends Component {
     super();
   }
   render() {
-    return null;
+    return (
+      <div className="card-container">
+        <img
+          src={`https://robohash.org/${this.props.monster.id}?set=set2&size=180x180`}
+        ></img>
+        <h2>{this.props.monster.name}</h2>
+        <p>{this.props.monster.email}</p>
+      </div>
+    );
   }
 }
 
